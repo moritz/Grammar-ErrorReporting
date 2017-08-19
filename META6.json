@@ -1,8 +1,8 @@
 {
   "name" : "Grammar-ErrorReporting",
-  "source-url" : "",
+  "source-url" : "git://github.com/moritz/Grammar-ErrorReporting.git",
   "support" : {
-    "source" : null
+    "bugtracker": "https://github.com/moritz/Grammar-ErrorReporting/issues"
   },
   "perl" : "6.c",
   "license" : "GPL-3.0",
