@@ -10,7 +10,8 @@
     "Test::META"
   ],
   "provides" : {
-    "Grammar::ErrorReporting" : "lib/Grammar/ErrorReporting.pm6"
+    "Grammar::ErrorReporting" : "lib/Grammar/ErrorReporting.pm6",
+    "X::Grammar::ParseError" : "lib/Grammar/ErrorReporting.pm6"
   },
   "version" : "*",
   "meta-version" : "0",
