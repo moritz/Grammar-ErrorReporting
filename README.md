@@ -1,17 +1,21 @@
 NAME
 ====
 
-Grammar::ErrorReporting - blah blah blah
+Grammar::ErrorReporting - Error reporting infrastructure for Perl 6 grammars
 
 SYNOPSIS
 ========
 
-    use Grammar::ErrorReporting;
+    grammar Parenthized does Grammar::ErrorReporting {
+        token TOP { '(' ~ ')' \d+ }
+    }
+    Parenthized.parse('(123');
+
 
 DESCRIPTION
 ===========
 
-Grammar::ErrorReporting is ...
+Please see the POD in `lib/Grammar/ErrorReporting.pm6` for more documentation.
 
 AUTHOR
 ======
