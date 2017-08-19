@@ -32,4 +32,18 @@ throws-like { MyTest.parse('(1') }, X::Grammar::ParseError,
     message => /'Cannot parse'/,
     ;
 
+grammar MyTest2 does Grammar::ErrorReporting {
+    token TOP {
+        .. \n . <.error('OH NOEZ')>
+    }
+}
+
+throws-like { MyTest2.parse("ab\ncdef") }, X::Grammar::ParseError,
+    error-position => 4,
+    goal => !*.defined,
+    line => 2,
+    msg => 'OH NOEZ',
+    ;
+
+
 done-testing;
