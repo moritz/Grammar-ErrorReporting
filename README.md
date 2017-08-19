@@ -6,10 +6,20 @@ Grammar::ErrorReporting - Error reporting infrastructure for Perl 6 grammars
 SYNOPSIS
 ========
 
-    grammar Parenthized does Grammar::ErrorReporting {
-        token TOP { '(' ~ ')' \d+ }
-    }
-    Parenthized.parse('(123');
+```perl6
+grammar Parenthized does Grammar::ErrorReporting {
+    token TOP { '(' ~ ')' \d+ }
+}
+Parenthized.parse('(123');
+```
+
+This produces an error message like this:
+
+```
+Cannot parse input: no closing ')'
+at line 1, around "(123⏏"
+(error location indicated by ⏏)
+```
 
 
 DESCRIPTION
