@@ -13,7 +13,7 @@
     "Grammar::ErrorReporting" : "lib/Grammar/ErrorReporting.pm6",
     "X::Grammar::ParseError" : "lib/Grammar/ErrorReporting.pm6"
   },
-  "version" : "*",
+  "version" : "0.1",
   "meta-version" : "0",
   "authors" : [
     "Moritz Lenz"
