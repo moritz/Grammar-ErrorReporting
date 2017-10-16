@@ -1,5 +1,5 @@
 {
-  "name" : "Grammar-ErrorReporting",
+  "name" : "Grammar::ErrorReporting",
   "source-url" : "git://github.com/moritz/Grammar-ErrorReporting.git",
   "support" : {
     "bugtracker": "https://github.com/moritz/Grammar-ErrorReporting/issues"
